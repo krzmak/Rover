@@ -38,4 +38,4 @@ The main loop of the program is in the `app` folder.
 
 ## Sources
 
-The project was developed as part of coursework under Dr. Bogdan Kreczmer, utilizing a proprietary file that facilitates communication between the application and the gnuplot software (file: /prj/src/lacze_do_gnuplota.cpp).
+The project was developed as part of coursework under Dr. Bogdan Kreczmer, utilizing a proprietary file that facilitates communication between the application and the gnuplot software (file: /src/lacze_do_gnuplota.cpp).
