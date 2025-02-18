@@ -1,7 +1,24 @@
-# kpo-zad6-1
+# Virtual Rover
 
-KPO (P) 2021/2022
-Zadanie 6.1 - Sterowanie uproszczoną platformą mobilną
+Simple app made in w C++ and gnuplot.
+
+![Virtual Rover](img/Rover.png) <!-- Change this to the correct image filename -->
+
+## Spis treści
+- [Info](#Info)
+- [Tech](#Tech)
+- [Building](#ustawianie)
+- [Sources](#sources)
+
+## Info
+
+The goal of this project is to familiarize users with object-oriented programming in C++ and the graphical capabilities of gnuplot.
+This application provides a simple interface for controlling a virtual rover that navigates across a generated terrain, and has build in collision detection.
+
+## Tech
+
+- C++11
+- gnuplot version 5.4
 
 ## Building
 
@@ -16,43 +33,9 @@ Example:
 > cmake .. #### options: -DCMAKE_BUILD_TYPE=[Debug | Coverage | Release], Debug is default
 > make     #### compilation
 > ./main   #### main() from app
-> make fulltest #### compile & run tests with full decription
-> make doc       #### Generate html documentation
 ```
-
-Things to remember during upgrading project to new task:
-
-* changes to CMakeLists.txt in the main folder with new files added, i.e.:
-
-```cpp
-// --------------------------------------------------------------------------------
-//                         Locate files (change as needed).
-// --------------------------------------------------------------------------------
-set(SOURCES          // All .cpp files in src/
-    src/Matrix2x2.cpp
-    src/Rectangle .cpp
-    src/Vector2D.cpp // etc.
-)
-set(TESTFILES        // All .cpp files in tests/
-    Vector2D.cpp
-    Matrix2x2.cpp
-    Rectangle.cpp // etc.
-)
-set(LIBRARY_NAME zadX)  // Default name for the library built from src/*.cpp (change if you wish)
-```
-
-* changes to tests/CMakeLists.txt (in tests subfolder) with new files added, i.e.:
-
-```cpp
-# List all files containing tests. (Change as needed)
-set(TESTFILES        // All .cpp files in tests/
-    main.cpp
-    test_Wektor2D.cpp
-    test_Macierz2x2.cpp
-    test_Prostokat.cpp // etc.
-)
-```
-
-The `main.cpp` in the folder `tests` is needed. Only there we define `#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN`.
-
 The main loop of the program is in the `app` folder.
+
+## Sources
+
+The project was developed as part of coursework under Dr. Bogdan Kreczmer, utilizing a proprietary file that facilitates communication between the application and the gnuplot software (file: /prj/src/lacze_do_gnuplota.cpp).
