@@ -4,7 +4,7 @@ Simple app made in w C++ and gnuplot.
 
 ![Virtual Rover](img/Rover.png) <!-- Change this to the correct image filename -->
 
-## Spis treści
+## Contents
 - [Info](#Info)
 - [Tech](#Tech)
 - [Building](#ustawianie)
